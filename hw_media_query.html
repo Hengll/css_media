@@ -14,7 +14,7 @@
 
         /* 手機版面 */
 
-        #small {
+        #container {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -68,7 +68,7 @@
             }
 
             hr {
-                display: none;
+                position: absolute;
             }
 
             #wda img {
@@ -80,7 +80,7 @@
                 position: absolute;
             }
 
-            #small {
+            #container {
                 height: 100vh;
                 justify-content: center;
             }
@@ -88,6 +88,14 @@
             #html {
                 top: 5%;
                 left: 0%;
+            }
+
+            #html+hr {
+                width: 28%;
+                top: 25%;
+                left: 14%;
+                transform: rotate(16deg);
+                transform-origin: 0%;
             }
 
             #css {
@@ -124,7 +132,7 @@
 </head>
 
 <body>
-    <div id="small">
+    <div id="container">
         <div id="wda" class="card">
             <img src="./hw_media_query/wda.png">
             <h1>泰山職訓局</h1>
@@ -196,6 +204,7 @@
                 2016年一項針對JavaScript框架的調查表明，Vue有著89%的開發者滿意度。[6]在GitHub上，該專案平均每天能收穫95顆星，[6][7]為GitHub有史以來星標數第3多的專案。
             </p>
         </div>
+        <hr>
     </div>
 </body>
 
