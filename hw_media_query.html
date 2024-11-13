@@ -75,6 +75,10 @@
                 width: 15%;
             }
 
+            #wda {
+                font-size: 1vw;
+            }
+
             .card:not(#wda) {
                 width: 20%;
                 position: absolute;
@@ -94,7 +98,9 @@
                 width: 28%;
                 top: 25%;
                 left: 14%;
-                transform: rotate(16deg);
+                /* transform: rotate(16deg); */
+                --radd: atan2(28vw, 100vh);
+                transform: rotate(var(--radd));
                 transform-origin: 0%;
             }
 
